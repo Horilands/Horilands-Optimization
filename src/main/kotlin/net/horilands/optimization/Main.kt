@@ -18,7 +18,7 @@ class Main : JavaPlugin(), Listener {
     }
 
     fun c(e: BlockEvent) {
-        if (e is Cancellable) (e as Cancellable).isCancelled = true
+        (e as? Cancellable)?.isCancelled = true
     }
 
     @EventHandler
