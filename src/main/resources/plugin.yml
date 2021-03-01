@@ -1,0 +1,8 @@
+name: Horilands-Optimization
+version: 1.0.0
+description: Remove some minecraft things to improve server performances.
+author: Swiiz
+authors: [Swiiz]
+website: https://horilands.net/
+
+main: net.horilands.optimization.Main
