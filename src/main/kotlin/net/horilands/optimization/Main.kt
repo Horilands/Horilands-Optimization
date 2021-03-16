@@ -4,10 +4,7 @@ import org.bukkit.Material
 import org.bukkit.event.Cancellable
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
-import org.bukkit.event.block.BlockEvent
-import org.bukkit.event.block.BlockFormEvent
-import org.bukkit.event.block.BlockFromToEvent
-import org.bukkit.event.block.BlockPhysicsEvent
+import org.bukkit.event.block.*
 import org.bukkit.event.entity.EntityChangeBlockEvent
 import org.bukkit.plugin.java.JavaPlugin
 
@@ -21,6 +18,9 @@ class Main : JavaPlugin(), Listener {
     fun c(e: BlockEvent) {
         (e as? Cancellable)?.isCancelled = true
     }
+
+    @EventHandler
+    fun fadeEvent(e: BlockFadeEvent) = c(e)
 
     @EventHandler
     fun physicsEvent(e: BlockPhysicsEvent) = c(e)
