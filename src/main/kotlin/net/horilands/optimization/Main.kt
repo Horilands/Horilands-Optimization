@@ -26,10 +26,7 @@ class Main : JavaPlugin(), Listener {
     fun physicsEvent(e: BlockPhysicsEvent) = c(e)
 
     @EventHandler
-    fun liq(e: BlockFromToEvent) = c(e)
-
-    @EventHandler
-    fun cobble(e: BlockFormEvent) {
+    fun liq(e: BlockFromToEvent) {
         if(
             e.block.type != Material.OAK_DOOR &&
             e.block.type != Material.SPRUCE_DOOR &&
@@ -41,8 +38,10 @@ class Main : JavaPlugin(), Listener {
             e.block.type != Material.WARPED_DOOR &&
             e.block.type != Material.CRIMSON_DOOR
         ) c(e)
-
     }
+
+    @EventHandler
+    fun cobble(e: BlockFormEvent) = c(e)
 
     @EventHandler
     fun sand(e: EntityChangeBlockEvent) {
