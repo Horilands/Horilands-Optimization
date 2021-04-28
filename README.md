@@ -5,8 +5,6 @@
 **Type**: Optimizer
 **Developers:** Swiiz
 
-------------------------------------
-
 Horilands Optimization disable falling blocks, water flow, pistons, redstone... to increase performances of a minecraft server.
 
 ------------------------------------
