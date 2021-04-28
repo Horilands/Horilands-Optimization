@@ -12,9 +12,7 @@ Horilands Optimization disable falling blocks, water flow, pistons, redstone... 
 **Type**: Optimizer  
 **Developers:** Swiiz
 
-## License
-MIT License:
-
+## MIT License
 ```
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
